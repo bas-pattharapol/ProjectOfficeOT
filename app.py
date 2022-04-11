@@ -641,5 +641,12 @@ def detailsWeekly(id):
     
     return render_template("",username = id)
 
+@app.route("/po/<string:id>", methods=['GET', 'POST'])
+@flask_login.login_required
+def po(id):
+ 
+    
+    return render_template("po.html",username = id)
+
 if __name__ == "__main__": 
     app.run(host='0.0.0.0', debug=True, port=5000)
