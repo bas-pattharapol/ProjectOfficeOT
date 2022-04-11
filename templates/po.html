@@ -285,108 +285,29 @@
                 <div class="row">
 
 
-                    <div class="table-responsive">
-
-
-                        <table id="example" class="display" style="text-align: center; width: 100% ">
-                            <thead>
-                                <tr>
-
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Rate 1.5</th>
-                                    <th>Rate 2</th>
-                                    <th>Rate 3</th>
-                                    <th>Salary</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody style="font-weight: bold;">
-
-                                {%for i in data%}
-                                <tr>
-                                    <td>{{i[0]}}</td>
-                                    <td style="text-align: left;">{{i[1]}}</td>
-                                    <td>{{i[2]}}</td>
-                                    <td>{{i[3]}}</td>
-                                    <td>{{i[4]}}</td>
-                                    <td>{{i[5]}}</td>
-
-                                    <td>
-                                        <a href="/detailsWeekly/{{i[0]}}" class="btn  btn-primary" style="color: #fff;margin: 0 auto; ">Details</a>
-                                    </td>
-
-
-                                </tr>
-                                {%endfor%}
-
-                                <div id="modalAdd" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content" style="width: 100%">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Details :</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                            </div>
-                                            <div class="modal-body">
-
-
-                                                <div class="form-group">
-                                                    <label>Activity :</label>
-                                                    <input type="text" class="form-control" name="Activity" value="">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Description :</label>
-                                                    <select name="Description" class="form-control" id="cars">
-                                                            <option value="office">office</option>
-                                                            <option value="onsite">onsite</option>
-                                                           
-                                                          </select>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label>TimeEnd Moning :</label>
-                                                    <input type="time" class="form-control" name="TimeStart_Moning" value="08:00">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>TimeEnd Moning :</label>
-                                                    <input type="time" class="form-control" name="TimeEnd_Moning" value="12:00">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>TimeStart Afternoon :</label>
-                                                    <input type="time" class="form-control" name="TimeStart_Afternoon" value="13:00">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>TimeEnd Afternoon :</label>
-                                                    <input type="time" class="form-control" name="TimeEnd_Afternoon" value="17:00">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>TimeStart OT :</label>
-                                                    <input type="time" class="form-control" name="TimeStart_OT" value="00:00">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>TimeEnd OT :</label>
-                                                    <input type="time" class="form-control" name="TimeEnd_OT" value="00:00">
-                                                </div>
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <br>
-                            </tbody>
-
-
-                        </table>
-                        <br>
-
-                    </div>
+                    <div class="container">
+                        <form action="" ">
+                      
+                          <label for="fname ">First Name</label>
+                          <input type="text " id="fname " name="firstname " placeholder="Your name.. ">
+                      
+                          <label for="lname ">Last Name</label>
+                          <input type="text " id="lname " name="lastname " placeholder="Your last name.. ">
+                      
+                          <label for="country ">Country</label>
+                          <select id="country " name="country ">
+                            <option value="australia ">Australia</option>
+                            <option value="canada ">Canada</option>
+                            <option value="usa ">USA</option>
+                          </select>
+                      
+                          <label for="subject ">Subject</label>
+                          <textarea id="subject " name="subject " placeholder="Write something.. " style="height:200px "></textarea>
+                      
+                          <input type="submit " value="Submit ">
+                      
+                        </form>
+                      </div>
                 </div>
             </div>
 
@@ -403,10 +324,10 @@
 
     <!--   Core JS Files   -->
 
-    <script src="{{ url_for('static', filename='assets/js/core/popper.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/core/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
+    <script src="{{ url_for( 'static', filename='assets/js/core/popper.min.js' ) }} "></script>
+    <script src="{{ url_for( 'static', filename='assets/js/core/bootstrap.min.js' ) }} "></script>
+    <script src="{{ url_for( 'static', filename='assets/js/plugins/perfect-scrollbar.min.js' ) }} "></script>
+    <script src="{{ url_for( 'static', filename='assets/js/plugins/smooth-scrollbar.min.js' ) }} "></script>
     <script src="{{ url_for( 'static', filename='bootstrap/dist/js/bootstrap.min.js' ) }} "></script>
     <script src="{{ url_for( 'static', filename='plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js' ) }} "></script>
     <script src="{{ url_for( 'static', filename='js/jquery.slimscroll.js' ) }} "></script>
@@ -438,13 +359,13 @@
             let week = document.querySelector('#week');
             let dates = parseDates(week.value);
             console.log(formatDate(dates));
-            document.getElementById("day1").innerHTML = formatDate(dates[0]);
-            document.getElementById("day2").innerHTML = formatDate(dates[1]);
-            document.getElementById("day3").innerHTML = formatDate(dates[2]);
-            document.getElementById("day4").innerHTML = formatDate(dates[3]);
-            document.getElementById("day5").innerHTML = formatDate(dates[4]);
-            document.getElementById("day6").innerHTML = formatDate(dates[5]);
-            document.getElementById("day7").innerHTML = formatDate(dates[6]);
+            document.getElementById("day1 ").innerHTML = formatDate(dates[0]);
+            document.getElementById("day2 ").innerHTML = formatDate(dates[1]);
+            document.getElementById("day3 ").innerHTML = formatDate(dates[2]);
+            document.getElementById("day4 ").innerHTML = formatDate(dates[3]);
+            document.getElementById("day5 ").innerHTML = formatDate(dates[4]);
+            document.getElementById("day6 ").innerHTML = formatDate(dates[5]);
+            document.getElementById("day7 ").innerHTML = formatDate(dates[6]);
         }
 
 
@@ -484,13 +405,13 @@
             var table = $('#example').DataTable({
 
 
-                "orderable": false,
+                "orderable ": false,
                 fixedColumns: true,
-                "ordering": false,
-                "bPaginate": false,
-                "bLengthChange": false,
-                "bFilter": false,
-                "bInfo": false,
+                "ordering ": false,
+                "bPaginate ": false,
+                "bLengthChange ": false,
+                "bFilter ": false,
+                "bInfo ": false,
 
 
 
@@ -515,9 +436,9 @@
         }
     </script>
     <!-- Github buttons -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js "></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="{{ url_for('static', filename='assets/js/soft-ui-dashboard.min.js') }}"></script>
+    <script src="{{ url_for( 'static', filename='assets/js/soft-ui-dashboard.min.js' ) }} "></script>
 
 </body>
 
