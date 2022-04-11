@@ -16,6 +16,8 @@ DBhost="192.168.1.15"
 DBport=3306
 DBdatabase="admin_myfoster"
 
+#123
+
 app = Flask(__name__)
 app.secret_key = '0'
 login_manager = flask_login.LoginManager()
