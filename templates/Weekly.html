@@ -46,12 +46,10 @@
     <script src="{{ url_for('static', filename='table/dataTables.dateTime.min.js') }}"></script>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
 
 
 
@@ -62,7 +60,7 @@
         font-size: 14px;
         margin: 0;
     }
-
+    
     table.dataTable tbody th,
     table.dataTable tbody td {
         padding: 4px 6px;
@@ -71,11 +69,9 @@
 </style>
 
 <body class="g-sidenav-show bg-gray-100">
-    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
-        id="sidenav-main">
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
         <div class="sidenav-header" align="center">
-            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-                aria-hidden="true" id="iconSidenav"></i>
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
             <a href="" target="_blank">
                 <img src="{{ url_for('static', filename='plugins/images/icon_Foster.png') }}" width="80%">
 
@@ -90,10 +86,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link  " href="/home/{{username}}">
-                        <div
-                            class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>customer-support</title>
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g transform="translate(-1717.000000, -291.000000)" fill="#FFFFFF"
@@ -120,10 +114,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link  active" href="">
-                        <div
-                            class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>document</title>
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF"
@@ -147,10 +139,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link  " href="">
-                        <div
-                            class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>spaceship</title>
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF"
@@ -186,8 +176,7 @@
     </aside>
     <div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
         <!-- Navbar -->
-        <nav
-            class="navbar navbar-main navbar-expand-lg bg-transparent shadow-none position-absolute px-4 w-100 z-index-2">
+        <nav class="navbar navbar-main navbar-expand-lg bg-transparent shadow-none position-absolute px-4 w-100 z-index-2">
             <div class="container-fluid py-1">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 ps-2 me-sm-6 me-5">
@@ -225,16 +214,14 @@
         </nav>
         <!-- End Navbar -->
         <div class="container-fluid">
-            <div class="page-header min-height-200 border-radius-xl mt-4"
-                style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
+            <div class="page-header min-height-200 border-radius-xl mt-4" style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
                 <span class="mask bg-gradient-primary opacity-6"></span>
             </div>
             <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
                 <div class="row gx-4">
                     <div class="col-auto">
                         <div class="avatar avatar-xl position-relative">
-                            <img src="{{ url_for('static', filename='assets/img/bruce-mars.jpg')}}" alt="profile_image"
-                                class="w-100 border-radius-lg shadow-sm">
+                            <img src="{{ url_for('static', filename='assets/img/bruce-mars.jpg')}}" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
                         </div>
                     </div>
                     <div class="col-auto my-auto">
@@ -277,9 +264,9 @@
 
 
                                     </div>
-                                    
-                                        
-                                    </form>
+
+
+                                </form>
 
 
                             </div>
@@ -328,11 +315,9 @@
                                         <td>{{dataOT4[a]}}</td>
                                         <td>{{dataOT19[a]}}</td>
                                         <td>{{dataOT20[a]}}</td>
-                                       
+
                                         <td>
-                                            <a class="btn btn-warning btn" data-toggle="modal"
-                                                data-target="#modaledit{{a}}"
-                                                style="color: black;margin: 0 auto;">Edit</a>
+                                            <a class="btn btn-warning btn" data-toggle="modal" data-target="#modaledit{{a}}" style="color: black;margin: 0 auto;">Edit</a>
                                         </td>
                                         <td><a href="#">Click To Details</a></td>
                                         {%else%}
@@ -341,12 +326,10 @@
                                         <td>-</td>
                                         <td>-</td>
                                         <td>-</td>
-                                       
+
                                         {%if dataweek[a] %}
                                         <td>
-                                            <a class="btn  btn-primary" data-toggle="modal"
-                                                data-target="#modalAdd{{a}}"
-                                                style="color: #fff;margin: 0 auto;">Add</a>
+                                            <a class="btn  btn-primary" data-toggle="modal" data-target="#modalAdd{{a}}" style="color: #fff;margin: 0 auto;">Add</a>
                                         </td>
                                         {%else%}
                                         <td>-</td>
@@ -370,8 +353,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title">Edit Data : {{dataweek[a]}}</h4>
-                                                    <button type="button" class="close"
-                                                        data-dismiss="modal">&times;</button>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                                                 </div>
                                                 <div class="modal-body">
@@ -379,8 +361,7 @@
                                                         <div class="form-group">
                                                             <input name="week" value="{{dataweekDE}}" hidden>
                                                             <label>Date :</label>
-                                                            <input type="text" class="form-control"  name="Date"
-                                                                value="{{dataweek[a]}}" readonly>
+                                                            <input type="text" class="form-control" name="Date" value="{{dataweek[a]}}" readonly>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Project :</label>
@@ -399,12 +380,11 @@
 
                                                         <div class="form-group">
                                                             <label>Activity :</label>
-                                                            <input type="text" class="form-control" name="Activity"
-                                                                value="{{dataOT6[a]}}">
+                                                            <input type="text" class="form-control" name="Activity" value="{{dataOT6[a]}}">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Description :</label>
-                                                            <select name="Description"  class="form-control" >
+                                                            <select name="Description" class="form-control">
                                                                 <option value="office">office</option>
                                                                 <option value="onsite">onsite</option>
                                                                
@@ -413,60 +393,50 @@
 
                                                         <div class="form-group">
                                                             <label>TimeEnd Moning :</label>
-                                                           
-                                                            <input type="time" class="form-control"
-                                                                name="TimeStart_Moning" value="0{{dataOT8[a]}}">
-                                                           
+
+                                                            <input type="time" class="form-control" name="TimeStart_Moning" value="0{{dataOT8[a]}}">
+
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeEnd Moning :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeEnd_Moning" value="{{dataOT9[a]}}">
+                                                            <input type="time" class="form-control" name="TimeEnd_Moning" value="{{dataOT9[a]}}">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeStart Afternoon :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeStart_Afternoon" value="{{dataOT10[a]}}">
+                                                            <input type="time" class="form-control" name="TimeStart_Afternoon" value="{{dataOT10[a]}}">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeEnd Afternoon :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeEnd_Afternoon" value="{{dataOT11[a]}}">
+                                                            <input type="time" class="form-control" name="TimeEnd_Afternoon" value="{{dataOT11[a]}}">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeStart OT :</label>
-                                                            <input type="time" class="form-control" name="TimeStart_OT"
-                                                                value="{{dataOT12[a]}}">
+                                                            <input type="time" class="form-control" name="TimeStart_OT" value="{{dataOT12[a]}}">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeEnd OT :</label>
-                                                            <input type="time" class="form-control" name="TimeEnd_OT"
-                                                                value="{{dataOT13[a]}}">
+                                                            <input type="time" class="form-control" name="TimeEnd_OT" value="{{dataOT13[a]}}">
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <button class="btn btn-primary"
-                                                                onclick="return confirm('คุณต้องการอัพเดตข้อมูลหรือไม่?')"
-                                                                type="submit">Update</button>
+                                                            <button class="btn btn-primary" onclick="return confirm('คุณต้องการอัพเดตข้อมูลหรือไม่?')" type="submit">Update</button>
                                                         </div>
 
                                                     </form>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default"
-                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                        
+
                                     <div id="modalAdd{{a}}" class="modal fade" role="dialog">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title">Add Data : {{dataweek[a]}}</h4>
-                                                    <button type="button" class="close"
-                                                        data-dismiss="modal">&times;</button>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                                                 </div>
                                                 <div class="modal-body">
@@ -474,8 +444,7 @@
                                                         <div class="form-group">
                                                             <label>Date :</label>
                                                             <input name="week" value="{{dataweekDE}}" hidden>
-                                                            <input type="text" class="form-control" name="Date"
-                                                                value="{{dataweek[a]}}" readonly>
+                                                            <input type="text" class="form-control" name="Date" value="{{dataweek[a]}}" readonly>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Project :</label>
@@ -494,12 +463,11 @@
 
                                                         <div class="form-group">
                                                             <label>Activity :</label>
-                                                            <input type="text" class="form-control" name="Activity"
-                                                                value="">
+                                                            <input type="text" class="form-control" name="Activity" value="">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Description :</label>
-                                                            <select name="Description"  class="form-control" id="cars">
+                                                            <select name="Description" class="form-control" id="cars">
                                                                 <option value="office">office</option>
                                                                 <option value="onsite">onsite</option>
                                                                
@@ -508,46 +476,37 @@
 
                                                         <div class="form-group">
                                                             <label>TimeEnd Moning :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeStart_Moning" value="08:00">
+                                                            <input type="time" class="form-control" name="TimeStart_Moning" value="08:00">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeEnd Moning :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeEnd_Moning" value="12:00">
+                                                            <input type="time" class="form-control" name="TimeEnd_Moning" value="12:00">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeStart Afternoon :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeStart_Afternoon" value="13:00">
+                                                            <input type="time" class="form-control" name="TimeStart_Afternoon" value="13:00">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeEnd Afternoon :</label>
-                                                            <input type="time" class="form-control"
-                                                                name="TimeEnd_Afternoon" value="17:00">
+                                                            <input type="time" class="form-control" name="TimeEnd_Afternoon" value="17:00">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeStart OT :</label>
-                                                            <input type="time" class="form-control" name="TimeStart_OT"
-                                                                value="00:00">
+                                                            <input type="time" class="form-control" name="TimeStart_OT" value="00:00">
                                                         </div>
                                                         <div class="form-group">
                                                             <label>TimeEnd OT :</label>
-                                                            <input type="time" class="form-control" name="TimeEnd_OT"
-                                                                value="00:00">
+                                                            <input type="time" class="form-control" name="TimeEnd_OT" value="00:00">
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <button class="btn btn-primary"
-                                                                onclick="return confirm('คุณต้องการอัพเดตข้อมูลหรือไม่?')"
-                                                                type="submit">Add</button>
+                                                            <button class="btn btn-primary" onclick="return confirm('คุณต้องการอัพเดตข้อมูลหรือไม่?')" type="submit">Add</button>
                                                         </div>
 
                                                     </form>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default"
-                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -584,18 +543,18 @@
     <script src="{{ url_for('static', filename='assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ url_for('static', filename='assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
     <script src="{{ url_for( 'static', filename='bootstrap/dist/js/bootstrap.min.js' ) }} "></script>
-    <script
-        src="{{ url_for( 'static', filename='plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js' ) }} "></script>
+    <script src="{{ url_for( 'static', filename='plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js' ) }} "></script>
     <script src="{{ url_for( 'static', filename='js/jquery.slimscroll.js' ) }} "></script>
     <script src="{{ url_for( 'static', filename='js/waves.js' ) }} "></script>
     <script src="{{ url_for( 'static', filename='js/custom.min.js' ) }} "></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('select').selectize({
                 sortField: 'text'
             });
         });
+
         function formatDate(date) {
             var d = new Date(date),
                 month = '' + (d.getMonth() + 1),
@@ -632,19 +591,17 @@
 
             let dayOffset = new Date(year, 0, 1).getDay(); // we need to know at what day of the week the year start
 
-            dayOffset--;  // depending on what day you want the week to start increment or decrement this value. This should make the week start on a monday
+            dayOffset--; // depending on what day you want the week to start increment or decrement this value. This should make the week start on a monday
 
             let days = [];
             for (let i = 0; i < 7; i++) // do this 7 times, once for every day
                 days.push(new Date(year, 0, day - dayOffset + i)); // add a new Date object to the array with an offset of i days relative to the first day of the week
             return days;
         }
-
     </script>
 
     <script>
-
-        $(document).ready(function () {
+        $(document).ready(function() {
 
 
             // Create date inputs
@@ -675,16 +632,15 @@
             });
 
             // Refilter the table
-            $('#min, #max').on('change', function () {
+            $('#min, #max').on('change', function() {
                 table.draw();
             });
 
-        }); </script>
+        });
+    </script>
 
 
     <script>
-
-
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
             var options = {
